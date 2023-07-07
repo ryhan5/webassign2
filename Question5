@@ -1,0 +1,3 @@
+content-box: With box-sizing: content-box, the size of an element is calculated by considering only the content area and excluding the padding and border. This means that when you specify a width or height for an element, it refers to the content area's dimensions.
+
+border-box: With box-sizing: border-box, the size of an element is calculated by including the content area, padding, and border. This means that when you specify a width or height for an element, it includes the padding and border in the total size, and the content area shrinks to accommodate the specified dimensions.
