@@ -1,0 +1,10 @@
+Different types of selectors are:
+Simple selectors (select elements based on name, id, class)
+Combinator selectors (select elements based on a specific relationship between them)
+Pseudo-class selectors (select elements based on a certain state)
+Pseudo-elements selectors (select and style a part of an element)
+The advantages of selectors are:
+Simple syntax since they include a single element in their structure.
+Performance is the same or faster compared to XPath.
+Easier to learn than XPath, easier to use.
+CSS Selector only allows unidirectional flow.
