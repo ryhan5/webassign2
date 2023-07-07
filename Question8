@@ -1,0 +1,61 @@
+The difference between absolute,relative,sticky,fixed positioning are as follows:
+1. Absolute Positioning:
+   - Absolute positioning removes the element from the normal document flow and positions it relative to its nearest positioned ancestor or the initial containing block.
+   - The element's position is specified using the `top`, `right`, `bottom`, and `left` properties.
+   - Absolute positioning does not leave a space for the element in the normal flow, so other elements can overlap it.
+   - Example:
+     ```css
+     .container {
+       position: relative;
+       height: 200px;
+     }
+
+     .box {
+       position: absolute;
+       top: 50px;
+       left: 50px;
+     }
+     ```
+     In this example, the `.box` element is positioned 50 pixels from the top and left of its nearest positioned ancestor, `.container`.
+
+2. Relative Positioning:
+   - Relative positioning adjusts the position of an element relative to its normal position in the document flow.
+   - The element remains in the normal flow, and its new position is determined using the `top`, `right`, `bottom`, and `left` properties.
+   - Relative positioning does not remove the element from the document flow, so it still affects the position of other elements.
+   - Example:
+     ```css
+     .box {
+       position: relative;
+       top: 20px;
+       left: 20px;
+     }
+     ```
+     In this example, the `.box` element is moved 20 pixels down and 20 pixels to the right from its original position.
+
+3. Sticky Positioning:
+   - Sticky positioning is a hybrid of relative and fixed positioning.
+   - The element is initially positioned according to the normal flow, but it becomes fixed (like `position: fixed`) when the user scrolls to a specific threshold or "sticky" point.
+   - Sticky positioning requires the `top`, `right`, `bottom`, or `left` properties to be set.
+   - Example:
+     ```css
+     .box {
+       position: sticky;
+       top: 50px;
+     }
+     ```
+     In this example, the `.box` element remains in the normal flow until the user scrolls to a position where the top of the element is 50 pixels from the top of the viewport, after which it becomes fixed.
+
+4. Fixed Positioning:
+   - Fixed positioning removes the element from the normal flow and positions it relative to the viewport (the browser window).
+   - The element's position is specified using the `top`, `right`, `bottom`, and `left` properties.
+   - Fixed positioning remains fixed in the viewport, even when scrolling.
+   - Example:
+     ```css
+     .box {
+       position: fixed;
+       top: 50px;
+       right: 20px;
+     }
+     ```
+     In this example, the `.box` element is positioned 50 pixels from the top and 20 pixels from the right of the viewport, and it remains fixed in that position even when the page is scrolled.
+
